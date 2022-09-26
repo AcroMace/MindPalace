@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6335AD4A28E1E2C5002C269C /* MindPalaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD4928E1E2C5002C269C /* MindPalaceApp.swift */; };
+		6335AD4C28E1E2C5002C269C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD4B28E1E2C5002C269C /* ContentView.swift */; };
+		6335AD4E28E1E2C6002C269C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335AD4D28E1E2C6002C269C /* Assets.xcassets */; };
+		6335AD5128E1E2C6002C269C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */; };
+		6335AD5B28E1E2C6002C269C /* MindPalaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */; };
+		6335AD6528E1E2C6002C269C /* MindPalaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */; };
+		6335AD6728E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6335AD5728E1E2C6002C269C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6335AD3E28E1E2C5002C269C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6335AD4528E1E2C5002C269C;
+			remoteInfo = MindPalace;
+		};
+		6335AD6128E1E2C6002C269C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6335AD3E28E1E2C5002C269C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6335AD4528E1E2C5002C269C;
+			remoteInfo = MindPalace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6335AD4628E1E2C5002C269C /* MindPalace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindPalace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6335AD4928E1E2C5002C269C /* MindPalaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceApp.swift; sourceTree = "<group>"; };
+		6335AD4B28E1E2C5002C269C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6335AD4D28E1E2C6002C269C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6335AD5628E1E2C6002C269C /* MindPalaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindPalaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceTests.swift; sourceTree = "<group>"; };
+		6335AD6028E1E2C6002C269C /* MindPalaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindPalaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITests.swift; sourceTree = "<group>"; };
+		6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6335AD4328E1E2C5002C269C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5328E1E2C6002C269C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5D28E1E2C6002C269C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6335AD3D28E1E2C5002C269C = {
+			isa = PBXGroup;
+			children = (
+				6335AD4828E1E2C5002C269C /* MindPalace */,
+				6335AD5928E1E2C6002C269C /* MindPalaceTests */,
+				6335AD6328E1E2C6002C269C /* MindPalaceUITests */,
+				6335AD4728E1E2C5002C269C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6335AD4728E1E2C5002C269C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6335AD4628E1E2C5002C269C /* MindPalace.app */,
+				6335AD5628E1E2C6002C269C /* MindPalaceTests.xctest */,
+				6335AD6028E1E2C6002C269C /* MindPalaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6335AD4828E1E2C5002C269C /* MindPalace */ = {
+			isa = PBXGroup;
+			children = (
+				6335AD4928E1E2C5002C269C /* MindPalaceApp.swift */,
+				6335AD4B28E1E2C5002C269C /* ContentView.swift */,
+				6335AD4D28E1E2C6002C269C /* Assets.xcassets */,
+				6335AD4F28E1E2C6002C269C /* Preview Content */,
+			);
+			path = MindPalace;
+			sourceTree = "<group>";
+		};
+		6335AD4F28E1E2C6002C269C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6335AD5928E1E2C6002C269C /* MindPalaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */,
+			);
+			path = MindPalaceTests;
+			sourceTree = "<group>";
+		};
+		6335AD6328E1E2C6002C269C /* MindPalaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */,
+				6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */,
+			);
+			path = MindPalaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6335AD4528E1E2C5002C269C /* MindPalace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6335AD6A28E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalace" */;
+			buildPhases = (
+				6335AD4228E1E2C5002C269C /* Sources */,
+				6335AD4328E1E2C5002C269C /* Frameworks */,
+				6335AD4428E1E2C5002C269C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindPalace;
+			productName = MindPalace;
+			productReference = 6335AD4628E1E2C5002C269C /* MindPalace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6335AD5528E1E2C6002C269C /* MindPalaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6335AD6D28E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalaceTests" */;
+			buildPhases = (
+				6335AD5228E1E2C6002C269C /* Sources */,
+				6335AD5328E1E2C6002C269C /* Frameworks */,
+				6335AD5428E1E2C6002C269C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6335AD5828E1E2C6002C269C /* PBXTargetDependency */,
+			);
+			name = MindPalaceTests;
+			productName = MindPalaceTests;
+			productReference = 6335AD5628E1E2C6002C269C /* MindPalaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6335AD5F28E1E2C6002C269C /* MindPalaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6335AD7028E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalaceUITests" */;
+			buildPhases = (
+				6335AD5C28E1E2C6002C269C /* Sources */,
+				6335AD5D28E1E2C6002C269C /* Frameworks */,
+				6335AD5E28E1E2C6002C269C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6335AD6228E1E2C6002C269C /* PBXTargetDependency */,
+			);
+			name = MindPalaceUITests;
+			productName = MindPalaceUITests;
+			productReference = 6335AD6028E1E2C6002C269C /* MindPalaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6335AD3E28E1E2C5002C269C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6335AD4528E1E2C5002C269C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					6335AD5528E1E2C6002C269C = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 6335AD4528E1E2C5002C269C;
+					};
+					6335AD5F28E1E2C6002C269C = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 6335AD4528E1E2C5002C269C;
+					};
+				};
+			};
+			buildConfigurationList = 6335AD4128E1E2C5002C269C /* Build configuration list for PBXProject "MindPalace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6335AD3D28E1E2C5002C269C;
+			productRefGroup = 6335AD4728E1E2C5002C269C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6335AD4528E1E2C5002C269C /* MindPalace */,
+				6335AD5528E1E2C6002C269C /* MindPalaceTests */,
+				6335AD5F28E1E2C6002C269C /* MindPalaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6335AD4428E1E2C5002C269C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6335AD5128E1E2C6002C269C /* Preview Assets.xcassets in Resources */,
+				6335AD4E28E1E2C6002C269C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5428E1E2C6002C269C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5E28E1E2C6002C269C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6335AD4228E1E2C5002C269C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6335AD4C28E1E2C5002C269C /* ContentView.swift in Sources */,
+				6335AD4A28E1E2C5002C269C /* MindPalaceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5228E1E2C6002C269C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6335AD5B28E1E2C6002C269C /* MindPalaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6335AD5C28E1E2C6002C269C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6335AD6728E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift in Sources */,
+				6335AD6528E1E2C6002C269C /* MindPalaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6335AD5828E1E2C6002C269C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6335AD4528E1E2C5002C269C /* MindPalace */;
+			targetProxy = 6335AD5728E1E2C6002C269C /* PBXContainerItemProxy */;
+		};
+		6335AD6228E1E2C6002C269C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6335AD4528E1E2C5002C269C /* MindPalace */;
+			targetProxy = 6335AD6128E1E2C6002C269C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6335AD6828E1E2C6002C269C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6335AD6928E1E2C6002C269C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6335AD6B28E1E2C6002C269C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindPalace/Preview Content\"";
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6335AD6C28E1E2C6002C269C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindPalace/Preview Content\"";
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6335AD6E28E1E2C6002C269C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindPalace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MindPalace";
+			};
+			name = Debug;
+		};
+		6335AD6F28E1E2C6002C269C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindPalace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MindPalace";
+			};
+			name = Release;
+		};
+		6335AD7128E1E2C6002C269C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindPalace;
+			};
+			name = Debug;
+		};
+		6335AD7228E1E2C6002C269C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N92XZM98NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acromace.MindPalaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindPalace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6335AD4128E1E2C5002C269C /* Build configuration list for PBXProject "MindPalace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335AD6828E1E2C6002C269C /* Debug */,
+				6335AD6928E1E2C6002C269C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6335AD6A28E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335AD6B28E1E2C6002C269C /* Debug */,
+				6335AD6C28E1E2C6002C269C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6335AD6D28E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335AD6E28E1E2C6002C269C /* Debug */,
+				6335AD6F28E1E2C6002C269C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6335AD7028E1E2C6002C269C /* Build configuration list for PBXNativeTarget "MindPalaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335AD7128E1E2C6002C269C /* Debug */,
+				6335AD7228E1E2C6002C269C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6335AD3E28E1E2C5002C269C /* Project object */;
+}
