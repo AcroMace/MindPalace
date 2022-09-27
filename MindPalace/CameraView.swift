@@ -7,10 +7,18 @@
 
 import SwiftUI
 
-struct CameraView: View {
-    var body: some View {
-        Text("Hello I am the camera view")
+struct CameraView: UIViewControllerRepresentable {
+
+    typealias UIViewControllerType = CameraViewController
+
+    func makeUIViewController(context: Context) -> CameraViewController {
+        CameraViewController()
     }
+
+    func updateUIViewController(_ uiViewController: CameraViewController, context: Context) {
+        // no-op
+    }
+
 }
 
 struct CameraView_Previews: PreviewProvider {

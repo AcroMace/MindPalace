@@ -29,7 +29,6 @@ struct ContentView: View {
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
-                Text("Hello, world!")
 
                 Button("View") {
                     isShowingCameraView = true
@@ -44,6 +43,7 @@ struct ContentView: View {
                 // This is the only case so far
                 CameraView()
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
