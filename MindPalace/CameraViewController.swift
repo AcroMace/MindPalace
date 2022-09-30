@@ -12,6 +12,7 @@ import ARKit
 class CameraViewController: UIViewController {
 
     private var arView: ARView?
+    private var entities: [Entity] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,14 @@ class CameraViewController: UIViewController {
         if let arView {
             view.addSubview(arView)
             arView.session.delegate = self
-            arView.debugOptions = [.showStatistics, .showFeaturePoints]
         }
+
+        let button = UIButton()
+        button.setTitle("Add label", for: .normal)
+        button.frame = CGRect(x: view.center.x / 2, y: 50, width: 100, height: 50)
+        button.backgroundColor = .red
+        button.addTarget(self, action: #selector(addLabel(_:)), for: .touchUpInside)
+        view.addSubview(button)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +36,7 @@ class CameraViewController: UIViewController {
 
         if let arView {
             let configuration = ARWorldTrackingConfiguration()
+            configuration.planeDetection = [.horizontal, .vertical]
             arView.session.run(configuration)
             arView.session.delegate = self
         }
@@ -45,6 +53,17 @@ class CameraViewController: UIViewController {
         super.viewWillLayoutSubviews()
 
         arView?.frame = self.view.bounds
+    }
+
+    @objc func addLabel(_ sender: Any) {
+        let anchor = AnchorEntity(plane: .horizontal,
+                                   minimumBounds: [0.2, 0.2])
+        arView!.scene.addAnchor(anchor)
+
+        let labelEntity = LabelEntity(text: "Hello")
+        // This is necessary for the objects not to be deallocated
+        entities.append(labelEntity)
+        anchor.addChild(labelEntity)
     }
 }
 

@@ -17,6 +17,7 @@
 		6335AD5B28E1E2C6002C269C /* MindPalaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */; };
 		6335AD6528E1E2C6002C269C /* MindPalaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */; };
 		6335AD6728E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */; };
+		63B115E628E704DC0030E5EA /* LabelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B115E528E704DC0030E5EA /* LabelEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6335AD6028E1E2C6002C269C /* MindPalaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindPalaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITests.swift; sourceTree = "<group>"; };
 		6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63B115E528E704DC0030E5EA /* LabelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				630CA2B328E2FCB500D29AFF /* CameraView.swift */,
 				630CA2B728E329D500D29AFF /* Scene.sks */,
 				630CA2B528E3257F00D29AFF /* CameraViewController.swift */,
+				63B115E528E704DC0030E5EA /* LabelEntity.swift */,
 				6335AD4D28E1E2C6002C269C /* Assets.xcassets */,
 				6335AD4F28E1E2C6002C269C /* Preview Content */,
 			);
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				630CA2B428E2FCB500D29AFF /* CameraView.swift in Sources */,
+				63B115E628E704DC0030E5EA /* LabelEntity.swift in Sources */,
 				630CA2B628E3257F00D29AFF /* CameraViewController.swift in Sources */,
 				6335AD4C28E1E2C5002C269C /* ContentView.swift in Sources */,
 				6335AD4A28E1E2C5002C269C /* MindPalaceApp.swift in Sources */,
