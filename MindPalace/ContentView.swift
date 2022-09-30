@@ -14,6 +14,8 @@ enum NavigationDestination {
 struct ContentView: View {
     @State private var isShowingCameraView = false
 
+    @State private var wordModels: [WordModel] = [WordModel("Hello"), WordModel("There")]
+
     var body: some View {
         NavigationView {
             VStack {
@@ -26,12 +28,12 @@ struct ContentView: View {
                     EmptyView()
                 }
 
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-
+                List(wordModels) { wordModel in
+                    HStack {
+                        Text(wordModel.word)
+                    }
+                }
             }
-            .padding()
             .navigationTitle(Text("Mind Palace"))
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
