@@ -30,14 +30,21 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
 
-                Button("View") {
-                    isShowingCameraView = true
-                }
             }
             .padding()
             .navigationTitle(Text("Mind Palace"))
             .toolbar {
-                EditButton()
+                ToolbarItem(placement: .primaryAction) {
+                    Button("+") {
+                        print("Pressed +")
+                    }
+                }
+
+                ToolbarItem(placement: .bottomBar) {
+                    Button("View") {
+                        isShowingCameraView = true
+                    }
+                }
             }
             .navigationDestination(for: NavigationDestination.self) { _ in
                 // This is the only case so far
