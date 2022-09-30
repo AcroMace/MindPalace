@@ -20,6 +20,7 @@ class CameraViewController: UIViewController {
         if let arView {
             view.addSubview(arView)
             arView.session.delegate = self
+            arView.debugOptions = [.showStatistics, .showFeaturePoints]
         }
     }
 
