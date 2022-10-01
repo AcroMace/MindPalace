@@ -56,11 +56,13 @@ class CameraViewController: UIViewController {
     }
 
     @objc func addLabel(_ sender: Any) {
-        let anchor = AnchorEntity(plane: .horizontal,
+        let anchor = AnchorEntity(plane: .vertical,
                                    minimumBounds: [0.2, 0.2])
         arView!.scene.addAnchor(anchor)
 
         let labelEntity = LabelEntity(text: "Hello")
+        let radians = -90.0 * Float.pi / 180.0
+        labelEntity.transform.rotation *= simd_quatf(angle: radians, axis: SIMD3<Float>(1,0,0))
         // This is necessary for the objects not to be deallocated
         entities.append(labelEntity)
         anchor.addChild(labelEntity)
