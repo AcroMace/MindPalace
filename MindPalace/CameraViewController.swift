@@ -30,11 +30,9 @@ class CameraViewController: UIViewController {
         arView = ARView(frame: view.bounds, cameraMode: .ar, automaticallyConfigureSession: true)
         if let arView {
             view.addSubview(arView)
-            arView.session.delegate = self
         }
 
         nextWordView.backgroundColor = .tertiarySystemBackground
-        nextWordLabel.text = "Add word"
         nextWordButton.setTitle("Done", for: .normal)
         nextWordButton.addTarget(self, action: #selector(addLabel(_:)), for: .touchUpInside)
         nextWordButton.backgroundColor = .lightGray
@@ -51,7 +49,6 @@ class CameraViewController: UIViewController {
             let configuration = ARWorldTrackingConfiguration()
             configuration.planeDetection = [.horizontal, .vertical]
             arView.session.run(configuration)
-            arView.session.delegate = self
         }
     }
 
@@ -123,26 +120,4 @@ class CameraViewController: UIViewController {
 
         nextWordLabel.text = "Placing word: \(words[wordsPlaced])"
     }
-}
-
-// MARK: - ARSessionDelegate
-
-extension CameraViewController: ARSessionDelegate {
-
-    func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        // no-op
-    }
-
-    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        // no-op
-    }
-
-    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-        // no-op
-    }
-
-    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
-        // no-op
-    }
-
 }
