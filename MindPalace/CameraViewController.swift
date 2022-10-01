@@ -13,6 +13,8 @@ class CameraViewController: UIViewController {
 
     private var arView: ARView?
     private var entities: [Entity] = []
+    private var words: [String] = []
+    private var wordsPlaced = 0 // index into words array
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,17 +57,31 @@ class CameraViewController: UIViewController {
         arView?.frame = self.view.bounds
     }
 
+    func add(words: [String]) {
+        self.words.append(contentsOf: words)
+    }
+
     @objc func addLabel(_ sender: Any) {
+        guard wordsPlaced < words.count else {
+            return
+        }
+
         let anchor = AnchorEntity(plane: .vertical,
-                                   minimumBounds: [0.2, 0.2])
+                                  minimumBounds: [0.1, 0.1]) // This is in meters
         arView!.scene.addAnchor(anchor)
 
-        let labelEntity = LabelEntity(text: "Hello")
+        let labelEntity = LabelEntity(text: words[wordsPlaced])
+
+        // By default, the text is laid flat on the ground
+        // We rotate it so that it's standing up / readable vertically
         let radians = -90.0 * Float.pi / 180.0
         labelEntity.transform.rotation *= simd_quatf(angle: radians, axis: SIMD3<Float>(1, 0, 0))
+
         // This is necessary for the objects not to be deallocated
         entities.append(labelEntity)
         anchor.addChild(labelEntity)
+
+        wordsPlaced += 1
     }
 }
 

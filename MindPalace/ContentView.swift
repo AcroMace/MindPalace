@@ -35,7 +35,7 @@ struct ContentView: View {
 
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink("View") {
-                        CameraView()
+                        CameraView(wordModels: $wordModels)
                     }
                 }
             }

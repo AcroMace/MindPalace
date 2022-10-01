@@ -15,7 +15,7 @@ class LabelEntity: Entity, HasModel {
         model = ModelComponent(
             mesh: .generateText(text, extrusionDepth: 0.02, font: .boldSystemFont(ofSize: 0.1)),
             materials: [
-                SimpleMaterial(color: .red, isMetallic: false)
+                SimpleMaterial(color: .black, isMetallic: false)
             ]
         )
     }
