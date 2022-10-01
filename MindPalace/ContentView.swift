@@ -19,15 +19,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                /**
-                 * This is weird but it's not rendered
-                 * We use this to activate the segue to CameraView depending on $isShowingCameraView
-                 * which we trigger with the navigation button
-                 */
-                NavigationLink(destination: CameraView(), isActive: $isShowingCameraView) {
-                    EmptyView()
-                }
-
                 List(wordModels) { wordModel in
                     HStack {
                         Text(wordModel.word)
@@ -43,14 +34,10 @@ struct ContentView: View {
                 }
 
                 ToolbarItem(placement: .bottomBar) {
-                    Button("View") {
-                        isShowingCameraView = true
+                    NavigationLink("View") {
+                        CameraView()
                     }
                 }
-            }
-            .navigationDestination(for: NavigationDestination.self) { _ in
-                // This is the only case so far
-                CameraView()
             }
             .navigationBarTitleDisplayMode(.inline)
         }
