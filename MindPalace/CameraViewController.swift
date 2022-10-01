@@ -11,10 +11,18 @@ import ARKit
 
 class CameraViewController: UIViewController {
 
+    private static let NextWordViewHeight = 40.0
+    private static let NextWordButtonWidth = 100.0
+    private static let NextWordLabelLeftMargin = 16.0
+
     private var arView: ARView?
     private var entities: [Entity] = []
     private var words: [String] = []
     private var wordsPlaced = 0 // index into words array
+
+    private let nextWordView = UIView()
+    private let nextWordLabel = UILabel()
+    private let nextWordButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +33,15 @@ class CameraViewController: UIViewController {
             arView.session.delegate = self
         }
 
-        let button = UIButton()
-        button.setTitle("Add label", for: .normal)
-        button.frame = CGRect(x: view.center.x / 2, y: 50, width: 100, height: 50)
-        button.backgroundColor = .red
-        button.addTarget(self, action: #selector(addLabel(_:)), for: .touchUpInside)
-        view.addSubview(button)
+        nextWordView.backgroundColor = .tertiarySystemBackground
+        nextWordLabel.text = "Add word"
+        nextWordButton.setTitle("Done", for: .normal)
+        nextWordButton.addTarget(self, action: #selector(addLabel(_:)), for: .touchUpInside)
+        nextWordButton.backgroundColor = .lightGray
+        nextWordView.addSubview(nextWordLabel)
+        nextWordView.addSubview(nextWordButton)
+        view.addSubview(nextWordView)
+        updateNextWordView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +66,24 @@ class CameraViewController: UIViewController {
         super.viewWillLayoutSubviews()
 
         arView?.frame = self.view.bounds
+
+        nextWordView.frame =
+        CGRect(x: 0,
+               y: view.frame.height - Self.NextWordViewHeight,
+               width: view.frame.width,
+               height: Self.NextWordViewHeight)
+
+        nextWordButton.frame =
+        CGRect(x: view.frame.width - Self.NextWordButtonWidth,
+               y: 0,
+               width: Self.NextWordButtonWidth,
+               height: Self.NextWordViewHeight)
+
+        nextWordLabel.frame =
+        CGRect(x: Self.NextWordLabelLeftMargin,
+               y: 0,
+               width: view.frame.width - Self.NextWordButtonWidth - Self.NextWordLabelLeftMargin,
+               height: Self.NextWordViewHeight)
     }
 
     func add(words: [String]) {
@@ -82,6 +111,17 @@ class CameraViewController: UIViewController {
         anchor.addChild(labelEntity)
 
         wordsPlaced += 1
+        updateNextWordView()
+    }
+
+    private func updateNextWordView() {
+        guard wordsPlaced < words.count else {
+            nextWordView.isHidden = true
+            return
+        }
+        nextWordView.isHidden = false
+
+        nextWordLabel.text = "Placing word: \(words[wordsPlaced])"
     }
 }
 
