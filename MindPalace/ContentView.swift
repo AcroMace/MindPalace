@@ -39,8 +39,10 @@ struct ContentView: View {
                     }
                 }
             }
+            // If we don't do this then the navigation bar is huge in the camera VC
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationViewStyle(.stack)
     }
 }
 
