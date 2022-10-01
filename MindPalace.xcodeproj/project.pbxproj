@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		630CA2B428E2FCB500D29AFF /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630CA2B328E2FCB500D29AFF /* CameraView.swift */; };
 		630CA2B628E3257F00D29AFF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630CA2B528E3257F00D29AFF /* CameraViewController.swift */; };
-		630CA2B828E329D500D29AFF /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 630CA2B728E329D500D29AFF /* Scene.sks */; };
 		6335AD4A28E1E2C5002C269C /* MindPalaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD4928E1E2C5002C269C /* MindPalaceApp.swift */; };
 		6335AD4C28E1E2C5002C269C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD4B28E1E2C5002C269C /* ContentView.swift */; };
 		6335AD4E28E1E2C6002C269C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335AD4D28E1E2C6002C269C /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		630CA2B328E2FCB500D29AFF /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		630CA2B528E3257F00D29AFF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		630CA2B728E329D500D29AFF /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		6335AD4628E1E2C5002C269C /* MindPalace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindPalace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6335AD4928E1E2C5002C269C /* MindPalaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceApp.swift; sourceTree = "<group>"; };
 		6335AD4B28E1E2C5002C269C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				63B115E728E721A30030E5EA /* WordModel.swift */,
 				6335AD4B28E1E2C5002C269C /* ContentView.swift */,
 				630CA2B328E2FCB500D29AFF /* CameraView.swift */,
-				630CA2B728E329D500D29AFF /* Scene.sks */,
 				630CA2B528E3257F00D29AFF /* CameraViewController.swift */,
 				63B115E528E704DC0030E5EA /* LabelEntity.swift */,
 				6335AD4D28E1E2C6002C269C /* Assets.xcassets */,
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630CA2B828E329D500D29AFF /* Scene.sks in Resources */,
 				6335AD5128E1E2C6002C269C /* Preview Assets.xcassets in Resources */,
 				6335AD4E28E1E2C6002C269C /* Assets.xcassets in Resources */,
 			);
