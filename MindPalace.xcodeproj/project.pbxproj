@@ -13,9 +13,6 @@
 		6335AD4C28E1E2C5002C269C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD4B28E1E2C5002C269C /* ContentView.swift */; };
 		6335AD4E28E1E2C6002C269C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335AD4D28E1E2C6002C269C /* Assets.xcassets */; };
 		6335AD5128E1E2C6002C269C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */; };
-		6335AD5B28E1E2C6002C269C /* MindPalaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */; };
-		6335AD6528E1E2C6002C269C /* MindPalaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */; };
-		6335AD6728E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */; };
 		63B115E628E704DC0030E5EA /* LabelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B115E528E704DC0030E5EA /* LabelEntity.swift */; };
 		63B115E828E721A30030E5EA /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B115E728E721A30030E5EA /* WordModel.swift */; };
 /* End PBXBuildFile section */
@@ -46,10 +43,7 @@
 		6335AD4D28E1E2C6002C269C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6335AD5628E1E2C6002C269C /* MindPalaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindPalaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceTests.swift; sourceTree = "<group>"; };
 		6335AD6028E1E2C6002C269C /* MindPalaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindPalaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITests.swift; sourceTree = "<group>"; };
-		6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindPalaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63B115E528E704DC0030E5EA /* LabelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEntity.swift; sourceTree = "<group>"; };
 		63B115E728E721A30030E5EA /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				6335AD4828E1E2C5002C269C /* MindPalace */,
-				6335AD5928E1E2C6002C269C /* MindPalaceTests */,
-				6335AD6328E1E2C6002C269C /* MindPalaceUITests */,
 				6335AD4728E1E2C5002C269C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,23 +112,6 @@
 				6335AD5028E1E2C6002C269C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6335AD5928E1E2C6002C269C /* MindPalaceTests */ = {
-			isa = PBXGroup;
-			children = (
-				6335AD5A28E1E2C6002C269C /* MindPalaceTests.swift */,
-			);
-			path = MindPalaceTests;
-			sourceTree = "<group>";
-		};
-		6335AD6328E1E2C6002C269C /* MindPalaceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6335AD6428E1E2C6002C269C /* MindPalaceUITests.swift */,
-				6335AD6628E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift */,
-			);
-			path = MindPalaceUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6335AD5B28E1E2C6002C269C /* MindPalaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6335AD6728E1E2C6002C269C /* MindPalaceUITestsLaunchTests.swift in Sources */,
-				6335AD6528E1E2C6002C269C /* MindPalaceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
