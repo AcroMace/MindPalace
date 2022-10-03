@@ -1,8 +1,8 @@
 # Mind Palace
 
-Add text to various surfaces in your home
+Add text to various surfaces in your home using ARKit and RealityKit
 
-![MindPalace demo gif](https://github.com/AcroMace/MindPalace/raw/master/Demo.gif)
+![MindPalace demo gif](https://github.com/AcroMace/MindPalace/raw/main/Demo.gif)
 
 ## Getting started
 
