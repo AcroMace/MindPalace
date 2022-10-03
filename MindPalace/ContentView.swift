@@ -12,33 +12,37 @@ enum NavigationDestination {
 }
 
 struct ContentView: View {
+    private let WordToAddHorizontalPadding: CGFloat = 16.0
+
     @State private var isShowingCameraView = false
 
-    @State private var wordModels: [WordModel] = [WordModel("Hello"), WordModel("There")]
+    @State private var wordModels: [WordModel] = []
+    @State private var wordToAdd: String = ""
 
     var body: some View {
         NavigationView {
             VStack {
+                HStack {
+                    TextField("Write something you want to remember" /* placeholder */, text: $wordToAdd)
+                    Button("Add", action: {
+                        wordModels.append(WordModel(wordToAdd))
+                        wordToAdd = ""
+                    })
+                }
+                .padding(EdgeInsets(top: 0, leading: WordToAddHorizontalPadding, bottom: 0, trailing: WordToAddHorizontalPadding))
+
                 List(wordModels) { wordModel in
                     HStack {
                         Text(wordModel.word)
                     }
                 }
+
+                NavigationLink("View") {
+                    CameraView(wordModels: $wordModels)
+                }
+                .padding()
             }
             .navigationTitle(Text("Mind Palace"))
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    Button("+") {
-                        print("Pressed +")
-                    }
-                }
-
-                ToolbarItem(placement: .bottomBar) {
-                    NavigationLink("View") {
-                        CameraView(wordModels: $wordModels)
-                    }
-                }
-            }
             // If we don't do this then the navigation bar is huge in the camera VC
             .navigationBarTitleDisplayMode(.inline)
         }
