@@ -17,3 +17,7 @@ The real device part is important as the project will fail to compile on the sim
 ## Notes
 
 It seems like when the anchor is placed, it waits until a vertical plane is recognized, and then it places it approximately at the center of the screen on the vertical plane. There's likely a smarter way of doing this, but right now there's no plane recognition before placement, it's all automatic.
+
+The vertical plane recognition seems like it doesn't work super well on my iPhone SE, but works well on the iPad Pro. I don't know why this is the case. Maybe it's not supported without LIDAR?
+
+It's relatively easy to add support for horizontal planes (see `addLabel`), but the text is currently rotated assuming it's a vertical plane. You'd need to know the currently viewed plane to know whether or not to rotate.
