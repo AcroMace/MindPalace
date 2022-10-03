@@ -2,6 +2,8 @@
 
 Add text to various surfaces in your home
 
+![MindPalace demo gif](https://github.com/AcroMace/MindPalace/raw/master/Demo.gif)
+
 ## Getting started
 
 1. Open MindPalace.xcodeproj
