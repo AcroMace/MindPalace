@@ -13,7 +13,8 @@ class CameraViewController: UIViewController {
 
     private static let NextWordViewHeight = 40.0
     private static let NextWordButtonWidth = 100.0
-    private static let NextWordLabelLeftMargin = 16.0
+    private static let NextWordPadding = 16.0
+    private static let NextWordGradientHeight = 80.0
 
     private var arView: ARView?
     private var entities: [Entity] = []
@@ -23,6 +24,8 @@ class CameraViewController: UIViewController {
     private let nextWordView = UIView()
     private let nextWordLabel = UILabel()
     private let nextWordButton = UIButton()
+    private let gradientView = UIView()
+    private let gradientLayer = CAGradientLayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +35,21 @@ class CameraViewController: UIViewController {
             view.addSubview(arView)
         }
 
-        nextWordView.backgroundColor = .tertiarySystemBackground
-        nextWordButton.setTitle("Done", for: .normal)
+        let gradientColors = [
+            UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor,
+            UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+        ]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0)
+        gradientLayer.colors = gradientColors
+        gradientView.layer.addSublayer(gradientLayer)
+        view.addSubview(gradientView)
+
+        nextWordButton.setTitle("Place", for: .normal)
         nextWordButton.addTarget(self, action: #selector(addLabel(_:)), for: .touchUpInside)
-        nextWordButton.backgroundColor = .lightGray
+        nextWordButton.backgroundColor = .systemGray
+
+        nextWordButton.layer.cornerRadius = 8
         nextWordView.addSubview(nextWordLabel)
         nextWordView.addSubview(nextWordButton)
         view.addSubview(nextWordView)
@@ -64,22 +78,29 @@ class CameraViewController: UIViewController {
 
         arView?.frame = self.view.bounds
 
+        gradientView.frame =
+        CGRect(x: 0,
+               y: view.frame.height - Self.NextWordGradientHeight,
+               width: view.frame.width,
+               height: Self.NextWordGradientHeight)
+        gradientLayer.frame = gradientView.bounds
+
         nextWordView.frame =
         CGRect(x: 0,
-               y: view.frame.height - Self.NextWordViewHeight,
+               y: view.frame.height - Self.NextWordViewHeight - Self.NextWordPadding,
                width: view.frame.width,
                height: Self.NextWordViewHeight)
 
         nextWordButton.frame =
         CGRect(x: view.frame.width - Self.NextWordButtonWidth,
                y: 0,
-               width: Self.NextWordButtonWidth,
+               width: Self.NextWordButtonWidth - Self.NextWordPadding,
                height: Self.NextWordViewHeight)
 
         nextWordLabel.frame =
-        CGRect(x: Self.NextWordLabelLeftMargin,
+        CGRect(x: Self.NextWordPadding,
                y: 0,
-               width: view.frame.width - Self.NextWordButtonWidth - Self.NextWordLabelLeftMargin,
+               width: view.frame.width - Self.NextWordButtonWidth - Self.NextWordPadding * 2,
                height: Self.NextWordViewHeight)
     }
 
